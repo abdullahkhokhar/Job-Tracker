@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+    <style>
+      .success, .error {
+        color: white;
+        padding: 5px;
+        margin: 5px 0 15px 0;
+      }
+
+      .success {
+        background: green;
+      }
+
+      .error {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Track Job</h1>
+      <form id="job-form">
+        <div>
+          <label for="Section of Operation">Section of Operation</label>
+          <input type="text" id="title" class="u-full-width">
+        </div>
+        <div>
+          <label for="Employee Name">Employee Name</label>
+          <input type="text" id="employee" class="u-full-width">
+        </div>
+        <div>
+          <label for="Job Number">Job Number</label>
+          <input type="text" id="job-number" class="u-full-width">
+        </div>
+        <div>
+          <input type="submit" value="Submit" class="u-full-width">
+        </div>
+      </form>
+      <table class = "u-full width">
+        <thead> <!-- table head -->
+          <tr> <!-- table row -->
+            <th>Section of Operation</th>
+            <th>Employee Name</th>
+            <th>Job Number</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id = "job-list">
+          <!-- dynamically will insert our rows here -->
+        </tbody>
+      </table>
+    </div>
+    <script src="app-es6.js"></script>
+  </body>
+</html>
